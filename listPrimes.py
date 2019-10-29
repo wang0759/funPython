@@ -14,3 +14,14 @@ def list_primes():
             print(n,end=" ")
     print()
 list_primes()
+
+
+# another way
+def isPrime(n):
+    prime = True
+    #n's square root = n**.5   
+    for i in range(2, int(n**0.5)+1):
+        if n % i == 0:
+            prime = False
+    return prime
+
